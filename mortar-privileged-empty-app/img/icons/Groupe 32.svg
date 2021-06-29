@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="74" viewBox="0 0 54 74">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 800 600">
+      <image width="800" height="600" xlink:href="../../../../../Downloads/Ghost%20Rider.jpg"/>
+    </pattern>
+  </defs>
+  <g id="Groupe_32" data-name="Groupe 32" transform="translate(-377 -10)">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(377 10)" fill="#fff" stroke="#c9c9c9" stroke-width="1">
+      <ellipse cx="27" cy="26.5" rx="27" ry="26.5" stroke="none"/>
+      <ellipse cx="27" cy="26.5" rx="26.5" ry="26" fill="none"/>
+    </g>
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="26" cy="25.5" rx="26" ry="25.5" transform="translate(378 11)" fill="#460b9d"/>
+    <rect id="Ghost_Rider" data-name="Ghost Rider" width="49" height="37" rx="14" transform="translate(379 18)" fill="url(#pattern)"/>
+    <text id="Raph" transform="translate(404 81)" fill="#48494b" font-size="13" font-family="LeelawadeeUI, Leelawadee UI"><tspan x="-14.695" y="0">Raph</tspan></text>
+  </g>
+</svg>

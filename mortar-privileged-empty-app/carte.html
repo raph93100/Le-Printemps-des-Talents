@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Privileged app</title>
+        <meta name="description" content="A privileged app stub">
+
+        <!--
+          viewport allows you to control how mobile browsers will render your content.
+          width=device-width tells mobile browsers to render your content across the
+          full width of the screen, without being zoomed out (by default it would render
+          it at a desktop width, then shrink it to fit.)
+          Read more about it here:
+          https://developer.mozilla.org/Mozilla/Mobile/Viewport_meta_tag
+        -->
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/app.css">
+
+        <!--
+        Inline JavaScript code is not allowed for privileged and certified apps,
+        due to Content Security Policy restrictions.
+        You can read more about it here: https://developer.mozilla.org/Apps/CSP
+        Plus keeping your JavaScript separated from your HTML is always a good practice!
+
+        We're also using the 'defer' attribute. This allows us to tell the browser that
+        it should not wait for this file to load before continuing to load the rest of
+        resources in the page. Then, once everything has been loaded, it will parse and
+        execute the deferred files.
+        Read about defer: https://developer.mozilla.org/Web/HTML/Element/script#attr-defer
+        -->
+        <script type="text/javascript" src="js/app.js" defer></script>
+
+        <!--
+        The following two lines are for loading the localisations library
+        and the localisation data-so people can use the app in their
+        own language (as long as you provide translations).
+        -->
+        <link rel="prefetch" type="application/l10n" href="data/locales.ini" />
+        <script type="text/javascript" src="js/libs/l10n.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="/img/icons/Groupe 1.svg" alt="Icône menu">
+            <img src="/img/icons/Groupe 32.svg" alt="Photo de profil">
+            <h1>Chance pour la France</h1>
+
+            <div class="topMenu">
+                <ul>
+                    <li>Billeterie</li>
+                    <li>Carte</li>
+                    <li>Activités</li>
+                    <li>Exposants</li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="Activité">
+            <img src="/img/icons/Groupe 38.jpg" alt="Musique">
+            <img src="/img/icons/fleche-droite.svg" alt="flèche">
+        </div>
+
+        <div class="onScene">
+            <h1>Sur scène</h1>
+            <img src="/img/icons/Groupe 39.jpg" alt="Foot Freestyle">
+            <img src="/img/icons/fleche-droite.svg" alt="flèche">
+        </div>
+    </body>
+</html>

@@ -79,12 +79,11 @@ ul {
   background-color: #006fff;
   border: 0;
   border-radius: 12px;
-  width: 45%;
+  width: 47%;
   font-size: 24px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   margin-left: 29%;
   box-shadow: 1px 2px 10px rgb(196, 196, 196);
+  align-self: center;
 }
 
 .exposants {
@@ -113,7 +112,7 @@ ul {
 
 .billet {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .price {
@@ -179,4 +178,28 @@ ul {
 .menu li{
   color: #48494b;
   font-size: 25px;
+}
+
+.blueTitle {
+  color: #006fff;
+  font-size: 23px;
+  font-family: 'Roboto';
+}
+
+form {
+  color: #48494b;
+  font-family: 'Roboto';
+}
+
+#typeArea {
+  width: 360px;
+  align-self: center;
+}
+
+#zone {
+  width: 20px;
+}
+
+#stand {
+  width: 23px;
 }

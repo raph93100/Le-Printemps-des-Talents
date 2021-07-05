@@ -59,7 +59,7 @@
                 <img class="menuIcon" src="/img/icons/Groupe 1.svg" alt="Icône menu">
                 <img class="profilPic" src="/img/icons/Groupe 32.svg" alt="Photo de profil">
             </div>
-            <h1 class="title">Le Printemps des Talents</h1>
+            <h1 class="title">Assistance</h1>
 
             <ul class="topMenu">
                 <li><a href="./billeterie.html">Billeterie</a></li>
@@ -70,11 +70,36 @@
             </div>
         </header>
 
-        <div class="eventMap">
+        <br>
+        <form action="" method="GET" class="signaler">
 
-        </div>
+            <div class="natureIncident">
+                <h2 class="blueTitle">Quelle est la nature de l'incident?</h2>
+                <label><input type="radio">Actes de violences</label>
+                <br>
+                <label><input type="radio">Hygiène</label>
+                <br>
+                <label><input type="radio">Désordre ou nettoyage requise</label>
+                <br>
+                <label><input type="radio">Mauvais comportement d'un individu</label>
+            </div>
+            <br>
+            <div class="descriptionIncident">
+                <h2 class="blueTitle">Décrivez brièvement l'incident:</h2>
+                <label><input type="text" id="typeArea" placeholder="écrivez ici..."></label>
+            </div>
+            <br>
+            <div class="zoneIncident">
+                <h2 class="blueTitle">Où à eu lieu l'incident?</h2>
+                <label>Zone:<input type="text" id="zone" placeholder="A"></label>
+                <label>Stand:<input type="text" id="stand" placeholder="n°0"></label>
+            </div>
 
-        <button class="blueBtn"><a href="./signaler.html">Signaler un incident</a></button>
+        <br>
+        <br>
+        <button class="blueBtn"><a href="./signaler.html">Signaler l'incident</a></button>
+
+        </form>
 
         <script type="text/javascript" src="main.js"></script>
     </body>

@@ -226,3 +226,47 @@ form {
   font-size: 60px;
   margin-top: 120px;
 }
+
+.profilDescription {
+  font-family: 'Roboto';
+  margin: 10%;
+}
+
+#pseudo {
+  border: 0;
+  background-color: #ececec;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+#name {
+  border: 0;
+  background-color: #ececec;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+#surname {
+  border: 0;
+  background-color: #ececec;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+#email {
+  border: 0;
+  background-color: #ececec;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+#password {
+  border: 0;
+  background-color: #ececec;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+.profilImg {
+  margin-left: 120px;
+}

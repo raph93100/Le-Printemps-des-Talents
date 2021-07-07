@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Billeterie</title>
-        <meta name="Activités" content="Activités">
+        <title>Billetterie</title>
+        <meta name="achat-billet" content="form-bancaire">
 
         <!--
           viewport allows you to control how mobile browsers will render your content.
@@ -53,17 +53,17 @@
                 <li>Confidentialité</li>
             </ul>
         </div>
-
+        
         <header>
             <div class="top">
-                <img class="menuIcon" id="menuIcon" src="/img/icons/Groupe 1.svg" alt="Icône menu">
+                <img class="menuIcon" src="/img/icons/Groupe 1.svg" alt="Icône menu">
                 <img class="profilPic" src="/img/icons/Groupe 32.svg" alt="Photo de profil">
             </div>
-            <h1 class="title">Le Printemps des Talents</h1>
+            <h1 class="title">Assistance</h1>
 
             <ul class="topMenu">
-                <li class="actif">Billeterie</li>
-                <li><a href="./carte.html">Carte</a></a></li>
+                <li><a href="./billeterie.html">Billeterie</a></li>
+                <li class="actif">Carte</a></li>
                 <li><a href="./index.html">Activités</a></li>
                 <li><a href="./exposants.html">Exposants</a></li>
             </ul>
@@ -71,43 +71,32 @@
         </header>
 
         <br>
-        <div class="billet">
-            <div class="price"><a href="./infoBancaire.html">10€</a></div>
+        <form action="" method="GET" class="infoBancaire">
 
-            <div class="infoBillet">
-                <h1 class="titleBillet">Entrée simple</h1>
-                <p>Formule basique. Vous payez le montant de votre choix</p>
+            <div class="montantPayer">
+                <h2 class="blueTitle">Entrez le montant que vous devez payer:</h2>
+                <label><input type="text" id="montant" placeholder="10€ minimum"></label>
             </div>
-        </div>
-        <br>
-        <div class="billet">
-            <div class="price">100€</div>
-
-            <div class="infoBillet">
-                <h1 class="titleBillet">Entrée exposants</h1>
-                <p>Formule pour les exposants.100€ pour un stand de 5m²</p>
+            <br>
+            <div class="nomCarte">
+                <h2 class="blueTitle">Ajouter une nouvelle carte bleue:</h2>
+                <h4 class="formTitle">Numéro de la carte:</h4>
+                <label><input type="text" id="nomCB" placeholder="écrivez ici..."></label>
             </div>
-        </div>
-        <br>
-        <div class="billet">
-            <div class="price">0€</div>
-
-            <div class="infoBillet">
-                <h1 class="titleBillet">Bénévolat</h1>
-                <p>La postulation est gratuite mais les places sont limitées.</p>
+            <br>
+            <div class="dateCrypto">
+                <h4>Date de validité:</h4>
+                <label><input type="text" id="date" placeholder="mm/aa"></label>
+                <h4>Cryptogramme visuel:</h4>
+                <label><input type="text" id="crypto"></label>
             </div>
-        </div>
 
         <br>
         <br>
-        <button class="blueBtn">Vos billets</button>
+        <button class="blueBtn">Valider le paiement</button>
 
-        <br>
-        <br>
-        <p class="endParagraph">
-            Cette section de l'application sera fermée à partir du 24/05/2022 à minuit, 
-            soit la veille du dernier jour du festival. Merci de votre compréhension.
-        </p>
+        </form>
+
         <script type="text/javascript" src="main.js"></script>
     </body>
 </html>

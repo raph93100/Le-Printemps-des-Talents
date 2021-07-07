@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Billeterie</title>
-        <meta name="Activités" content="Activités">
+        <title>Profil</title>
+        <meta name="profil" content="profil">
 
         <!--
           viewport allows you to control how mobile browsers will render your content.
@@ -69,46 +69,42 @@
             </ul>
             </div>
         </header>
-
         <br>
-        <div class="billet">
-            <div class="price"><a href="./infoBancaire.html">10€</a></div>
-
-            <div class="infoBillet">
-                <h1 class="titleBillet">Entrée simple</h1>
-                <p>Formule basique. Vous payez le montant de votre choix</p>
-            </div>
-        </div>
-        <br>
-        <div class="billet">
-            <div class="price">100€</div>
-
-            <div class="infoBillet">
-                <h1 class="titleBillet">Entrée exposants</h1>
-                <p>Formule pour les exposants.100€ pour un stand de 5m²</p>
-            </div>
-        </div>
-        <br>
-        <div class="billet">
-            <div class="price">0€</div>
-
-            <div class="infoBillet">
-                <h1 class="titleBillet">Bénévolat</h1>
-                <p>La postulation est gratuite mais les places sont limitées.</p>
-            </div>
+        <div class="profilImg">
+            <img src="./img/icons/Ellipse 4.jpg">
         </div>
 
-        <br>
-        <br>
-        <button class="blueBtn">Vos billets</button>
+        <div class="profilDescription">
 
+            <div class="pseudo">
+                <h3>Pseudo</h3>
+                <label><input type="text" id="pseudo" placeholder="Raph"></label>
+            </div>
+
+            <div class="name">
+                <h3>Prénom</h3>
+                <label><input type="text" id="name" placeholder="Raphaël"></label>
+            </div>
+
+            <div class="surname">
+                <h3>Nom de famille</h3>
+                <label><input type="text" id="surname" placeholder="Siona"></label>
+            </div>
+
+            <div class="email">
+                <h3>Email</h3>
+                <label><input type="email" id="email" placeholder="raphaelsiona@gmail.com"></label>
+            </div>
+
+            <div class="password">
+                <h3>Mot de passe</h3>
+                <label><input type="password" id="password" placeholder="Password"></label>
+            </div>
+
+        </div>
         <br>
-        <br>
-        <p class="endParagraph">
-            Cette section de l'application sera fermée à partir du 24/05/2022 à minuit, 
-            soit la veille du dernier jour du festival. Merci de votre compréhension.
-        </p>
+        <button class="blueBtn">Valider</button>
+
         <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
-

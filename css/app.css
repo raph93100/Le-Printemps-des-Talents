@@ -270,3 +270,15 @@ form {
 .profilImg {
   margin-left: 120px;
 }
+
+.signalement {
+  text-align: center;
+  display: block;
+  word-break: break-all;
+}
+
+.posted {
+  font-size: 20px;
+  font-family: 'Roboto';
+  color: #48494b;
+}

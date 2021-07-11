@@ -71,33 +71,36 @@
         </header>
 
         <br>
-        <form action="" method="GET" class="signaler">
+        <form action="./notif.php" method="POST" class="signaler">
 
             <div class="natureIncident">
+
                 <h2 class="blueTitle">Quelle est la nature de l'incident?</h2>
-                <label><input type="radio">Actes de violences</label>
-                <br>
-                <label><input type="radio">Hygiène</label>
-                <br>
-                <label><input type="radio">Désordre ou nettoyage requise</label>
-                <br>
-                <label><input type="radio">Mauvais comportement d'un individu</label>
+                <select name="choix">
+                    <option value="Actes de violences">Actes de violences</option>
+                    <br>
+                    <option value="Hygiène">Hygiène</option>
+                    <br>
+                    <option value="Désordre ou nettoyage requis">Désordre ou nettoyage requis</option>
+                    <br>
+                    <option value="Mauvais comportement d'un individu">Mauvais comportement d'un individu</option>
+                </select>
             </div>
+
             <br>
             <div class="descriptionIncident">
                 <h2 class="blueTitle">Décrivez brièvement l'incident:</h2>
-                <label><input type="text" id="typeArea" placeholder="écrivez ici..."></label>
+                <label><input type="text" name="desc" id="typeArea" placeholder="écrivez ici..."></label>
             </div>
             <br>
             <div class="zoneIncident">
                 <h2 class="blueTitle">Où à eu lieu l'incident?</h2>
-                <label>Zone:<input type="text" id="zone" placeholder="A"></label>
-                <label>Stand:<input type="text" id="stand" placeholder="n°0"></label>
+                <label>Stand:<input type="text" name="num" id="stand" placeholder="n°0"></label>
             </div>
 
         <br>
         <br>
-        <button class="blueBtn"><a href="./remerciement.html">Signaler l'incident</a></button>
+        <input type="submit" class="blueBtn"><a href="./remerciement.html"></a></input>
 
         </form>
 

@@ -6,20 +6,13 @@
             echo $e;
         }
 
-    $sqlrequest = "SELECT * from profilexposant";
-    $preprequest = $db->prepare($sqlrequest);
-    $preprequest->execute();
-
-    $results = $preprequest->fetchAll(PDO::FETCH_ASSOC);
-    $nbTour = 0;
-
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Exposants</title>
+        <title>Assistance</title>
         <meta name="Activités" content="Activités">
 
         <!--
@@ -54,7 +47,6 @@
         -->
         <link rel="prefetch" type="application/l10n" href="data/locales.ini" />
         <script type="text/javascript" src="js/libs/l10n.js" defer></script>
-        <link rel="icon" type="image/png" href="logo.png" />
     </head>
 
     <body>
@@ -74,40 +66,35 @@
         
         <header>
             <div class="top">
-                <img class="menuIcon" src="/img/icons/Groupe 1.svg" alt="menu">
-                <img class="profilPic" src="/img/icons/Groupe 32.svg" alt="Profil">
+                <img class="menuIcon" src="/img/icons/Groupe 1.svg" alt="Icône menu">
+                <img class="profilPic" src="/img/icons/Groupe 32.svg" alt="Photo de profil">
             </div>
-            <h1 class="title">Le Printemps des Talents</h1>
+            <h1 class="title">Assistance</h1>
 
             <ul class="topMenu">
                 <li><a href="./billeterie.html">Billeterie</a></li>
-                <li><a href="./carte.html">Carte</a></a></li>
+                <li class="actif">Carte</a></li>
                 <li><a href="./index.html">Activités</a></li>
-                <li class="actif">Exposants</li>
+                <li><a href="./exposants.php">Exposants</a></li>
             </ul>
             </div>
         </header>
 
-        <?php
-        foreach($results as $result) {
-        ?>
+        <br>
+        <div class="signalement">
 
-        <div class="exposants">
-            <div class="exposantImg">
-                <img alt="image exposant" src= "<?php echo $result["img"]; ?>">
-            </div>
-            <div class="description">
-                <h3 class="titleExpo"><?php echo $result['name']; ?> <?php
-                 echo $result['surname'];?></h3>
-                <p class="desc"><?php echo $result['description'];?></p>
-            </div>
+            <h2 class="blueTitle">Nature de l'incident:</h2>
+            <p class="posted"><?php echo $_POST['choix']?></p>
+            <br>
+            <h2 class="blueTitle">Description de l'incident:</h2>
+            <p class="posted"><?php echo $_POST['desc']?></p>
+            <br>
+            <h2 class="blueTitle">Lieu de l'incident:</h2>
+            <p class="posted">Stand n°<?php echo $_POST['num']?></p>
+            
         </div>
 
-        <?php
-        } 
-        ?>
         <script type="text/javascript" src="main.js"></script>
-        
     </body>
 </html>
 

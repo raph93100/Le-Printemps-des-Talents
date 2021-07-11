@@ -1,3 +1,20 @@
+<?php
+    try {
+        $db=new PDO("mysql:host=localhost;dbname=helpfest;port=3306", "helpfest", "123");
+        }
+        catch (PDOException $e) {
+            echo $e;
+        }
+
+    $sqlrequest = "SELECT * from profilexposant";
+    $preprequest = $db->prepare($sqlrequest);
+    $preprequest->execute();
+
+    $results = $preprequest->fetchAll(PDO::FETCH_ASSOC);
+    $nbTour = 0;
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -37,6 +54,7 @@
         -->
         <link rel="prefetch" type="application/l10n" href="data/locales.ini" />
         <script type="text/javascript" src="js/libs/l10n.js" defer></script>
+        <link rel="icon" type="image/png" href="logo.png" />
     </head>
 
     <body>
@@ -70,35 +88,24 @@
             </div>
         </header>
 
+        <?php
+        foreach($results as $result) {
+        ?>
+
         <div class="exposants">
             <div class="exposantImg">
-                <img src="./img/icons/exposant1.jpg">
+                <img alt="image exposant" src= "<?php echo $result["img"]; ?>">
             </div>
             <div class="description">
-                <h3 class="titleExpo">Exposant 1</h3>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a egestas felis, in mattis nisl. Pellentesque tempus velit lacus, sit amet euismod dui elementum eu. Nam ultrices congue risus sed sodales. Sed fermentum lectus quis enim egestas mollis. Pellentesque ac sem faucibus.</p>
-            </div>
-        </div>
-        
-        <div class="exposants">
-            <div class="exposantImg">
-                <img src="./img/icons/exposant1.jpg">
-            </div>
-            <div class="description">
-                <h3 class="titleExpo">Exposant 2</h3>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a egestas felis, in mattis nisl. Pellentesque tempus velit lacus, sit amet euismod dui elementum eu. Nam ultrices congue risus sed sodales. Sed fermentum lectus quis enim egestas mollis. Pellentesque ac sem faucibus.</p>
+                <h3 class="titleExpo"><?php echo $result['name']; ?> <?php
+                 echo $result['surname'];?></h3>
+                <p class="desc"><?php echo $result['description'];?></p>
             </div>
         </div>
 
-        </div><div class="exposants">
-            <div class="exposantImg">
-                <img src="./img/icons/exposant1.jpg">
-            </div>
-            <div class="description">
-                <h3 class="titleExpo">Exposant 3</h3>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a egestas felis, in mattis nisl. Pellentesque tempus velit lacus, sit amet euismod dui elementum eu. Nam ultrices congue risus sed sodales. Sed fermentum lectus quis enim egestas mollis. Pellentesque ac sem faucibus.</p>
-            </div>
-        </div>
+        <?php
+        } 
+        ?>
         <script type="text/javascript" src="main.js"></script>
         
     </body>

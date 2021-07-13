@@ -74,8 +74,8 @@
         
         <header>
             <div class="top">
-                <img class="menuIcon" src="/img/icons/Groupe 1.svg" alt="menu">
-                <img class="profilPic" src="/img/icons/Groupe 32.svg" alt="Profil">
+                <img class="menuIcon" src="./img/icons/Groupe 1.svg" alt="menu">
+                <img class="profilPic" src="./img/icons/Groupe 32.svg" alt="Profil">
             </div>
             <h1 class="title">Le Printemps des Talents</h1>
 
@@ -94,7 +94,7 @@
 
         <div class="exposants">
             <div class="exposantImg">
-                <img alt="image exposant" src= "<?php echo $result["img"]; ?>">
+                <img class="expoImg"alt="image exposant" src= "<?php echo $result["img"]; ?>">
             </div>
             <div class="description">
                 <h3 class="titleExpo"><?php echo $result['name']; ?> <?php

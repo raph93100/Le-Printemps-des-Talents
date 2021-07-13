@@ -282,3 +282,7 @@ form {
   font-family: 'Roboto';
   color: #48494b;
 }
+
+.expoImg {
+  border-radius: 12px;
+}
